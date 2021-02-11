@@ -53,29 +53,28 @@ export default class Modal {
       this.container.querySelector('.modal__title').innerHTML = title
     }
 
-
-
     generateRandomId() {
       return Math.floor(Math.random() * 10000);
   }
 
     addEventListener() {
-        this.container.querySelector('.modal__close').addEventListener('click',this.destroy)
+      this.container.querySelector('.modal__close').addEventListener('click',this.destroy)
 
-        this.container.querySelector('.btn').addEventListener('click',(event)=>{
-          let obj = new Object()
-          obj.name =  this.container.querySelector('input[name=name]').value
-          obj.price =  this.container.querySelector('input[name=price]').value
-          obj.date =  new Date().toLocaleDateString()
-          obj.id = this.generateRandomId()
+      this.container.querySelector('.btn').addEventListener('click',(event)=>{
+        let obj = new Object()
+        obj.name =  this.container.querySelector('input[name=name]').value
+        obj.price =  this.container.querySelector('input[name=price]').value
+        obj.date =  new Date().toLocaleDateString()
+        obj.id = this.generateRandomId()
 
-          const events = new CustomEvent('build', {
-            bubbles:true,
-            detail: obj
-          })
-          this.container.dispatchEvent(events)
-
+        const events = new CustomEvent('build', {
+          bubbles:true,
+          detail: obj
         })
+        this.container.dispatchEvent(events)
+        this.destroy()
+      })
+
     }
 
     destroy(){

@@ -37,6 +37,10 @@ table tbody tr:hover {
   transition-duration: 0.6s;
 }
 
+table input {
+  color: #000;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;

@@ -105,9 +105,9 @@ class Table {
         this.data.push(event.detail)
         let td = _createElementTable(`
         <tr data-id = ${event.detail.id}>
-            <td>${event.detail.name}</td>
-            <td>${event.detail.price}</td>
-            <td>${event.detail.date}</td>
+            <td data-name = name>${event.detail.name}</td>
+            <td data-price = price>${event.detail.price}</td>
+            <td data-date = date>${event.detail.date}</td>
         </tr>
         `)
         this.container.querySelector('tbody').append(td)
