@@ -1,0 +1,24 @@
+.header {
+  background: #449ddd;
+  height: 34px;
+  padding: 21px 15px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  &__link{
+    color: #fff;
+  }
+}
+
+.logo h1 {
+  color: #fff;
+}

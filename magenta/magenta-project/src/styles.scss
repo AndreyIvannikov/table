@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #3c3a3c url(https://s-cdn.sportbox.ru/sites/all/libraries/design/_spbver2349_/sportbox2015/background.gif) 0 0 repeat fixed;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  font-size: 29px;
+  text-align: center;
+}
+
+.btn{
+  border: 2px solid grey;
+  display: block;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  &:hover{
+    border-color: #fff;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search{
+  background-color: #494149;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
